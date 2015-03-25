@@ -2,7 +2,7 @@ var fs = require('fs')
 var path = require('path')
 
 var Q = require('q')
-var karma = require('karma')
+var karma = require('../karma')
 var rimraf = require('rimraf')
 var quickTemp = require('quick-temp')
 var symlinkOrCopySync = require('symlink-or-copy').sync

@@ -2,11 +2,16 @@ var assert = require('assert')
 var path = require('path')
 var fs = require('fs-extra')
 
+var proxyquire = require('proxyquire').noCallThru()
 var _ = require('underscore')
 var Q = require('q')
 var broccoli = require('broccoli')
 
-var BroccoliKarma = require('..')
+var BroccoliKarma = proxyquire('..', {
+	// Normally karma dependency is on the same level as plugin,
+	// but we can't have it in test.
+	'../karma': require('karma'),
+})
 
 describe('broccoli-karma', function() {
 	this.timeout(8000)

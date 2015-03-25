@@ -4,13 +4,17 @@ Plugin for Broccoli that runs tests with [Karma](http://karma-runner.github.io/)
 
 # Install
 
-```
+```sh
+npm install karma
+# Also install all required karma plugins
 npm install broccoli-karma-plugin
 ```
+
 
 # Usage
 
 ```js
+// Brocfile.js
 var broccoliKarma = require('broccoli-karma-plugin')
 
 var runTests = broccoliKarma('inputTree/', {
