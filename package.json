@@ -1,0 +1,37 @@
+{
+  "name": "broccoli-karma-plugin",
+  "version": "0.0.1",
+  "description": "Plugin for Broccoli that runs tests with Karma",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha; killall phantomjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunflowerdeath/broccoli-karma-plugin"
+  },
+  "dependencies": {
+    "karma": "^0.12.31",
+    "q": "^1.2.0",
+    "quick-temp": "^0.1.2",
+    "rimraf": "^2.3.2",
+    "symlink-or-copy": "^1.0.1"
+  },
+  "devDependencies": {
+    "broccoli": "^0.15.0",
+    "fs-extra": "^0.16.5",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^2.2.1",
+    "sinon": "^1.14.1",
+    "underscore": "^1.8.2"
+  },
+  "keywords": [
+    "broccoli-plugin"
+  ],
+  "author": "sunflowerdeath",
+  "license": "public domain"
+}
