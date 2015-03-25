@@ -22,14 +22,14 @@ module.exports = runTests
 ```
 
 To use plugin with `broccoli serve` you need option `autoWatch: true`
-(by default is is true).<br>
+(by default it is true).<br>
 Then on first build plugin will start karma server,
 and on rebuild file changes will be watched by karma.
 
 To use with `broccoli build` you need to set option `singleRun: true`.<br>
 With this option karma starts server, runs tests and exits
-(so called continious integration mode).<br>
-Plugin will wait until karma exits, and if some test will be failed, it will return an error.
+(so-called continious integration mode).<br>
+Plugin will wait until karma exits, and if some test will fail, task will return an error.
 
 # License
 
