@@ -63,7 +63,9 @@ Tree.prototype.runKarma = function(options) {
 	}
 }
 
-Tree.prototype.cleanup = function() {}
+Tree.prototype.cleanup = function() {
+	quickTemp.remove(this, 'karmaDir')
+}
 
 
 module.exports = Tree
